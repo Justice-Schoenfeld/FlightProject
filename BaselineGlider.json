@@ -1,0 +1,259 @@
+{
+	"tag": {
+		"UUID": "D3853283-1E76-4EB4-8521-B0E980639F4A",
+		"date": "2019-03-07T22:49:12.098Z",
+		"version": "MachUp 4.0"
+	},
+	"run": {
+		"forces": ""
+	},
+	"solver": {
+		"type": "linear",
+		"convergence": 0.000001,
+		"relaxation": 0.9
+	},
+	"plane": {
+		"name": "MyAirplane",
+		"CGx": 0.02,
+		"CGy": 0,
+		"CGz": -0.025
+	},
+	"reference": {
+		"area": 0,
+		"longitudinal_length": 0,
+		"lateral_length": 0
+	},
+	"condition": {
+		"alpha": 1,
+		"beta": 0
+	},
+	"controls": {
+		"elevator": {
+			"is_symmetric": 1,
+			"deflection": 0
+		},
+		"rudder": {
+			"is_symmetric": 0,
+			"deflection": 0
+		},
+		"aileron": {
+			"is_symmetric": 0,
+			"deflection": 0
+		},
+		"flap": {
+			"is_symmetric": 1,
+			"deflection": 0
+		}
+	},
+	"airfoil_DB": ".",
+	"wings": {
+		"Center_Main": {
+			"name": "Center_Main",
+			"ID": 1,
+			"is_main": 1,
+			"side": "both",
+			"connect": {
+				"ID": 0,
+				"location": "tip",
+				"dx": 0,
+				"dy": 0,
+				"dz": 0,
+				"yoffset": 0
+			},
+			"span": 1.5,
+			"sweep": 0,
+			"dihedral": 0,
+			"mounting_angle": 6,
+			"washout": 0,
+			"root_chord": 0.75,
+			"tip_chord": 0.75,
+			"airfoils": {
+				"af1": {
+					"properties": {
+						"type": "linear",
+						"alpha_L0": -0.036899751,
+						"CL_alpha": 6.283185307,
+						"Cm_L0": -0.0527,
+						"Cm_alpha": -0.08,
+						"CD0": 0.0055,
+						"CD0_L": -0.0045,
+						"CD0_L2": 0.01,
+						"CL_max": 1.4
+					}
+				},
+				"af2": {
+					"properties": {
+						"type": "linear",
+						"alpha_L0": -0.036899751,
+						"CL_alpha": 6.283185307,
+						"Cm_L0": -0.0527,
+						"Cm_alpha": -0.08,
+						"CD0": 0.0055,
+						"CD0_L": -0.0045,
+						"CD0_L2": 0.01,
+						"CL_max": 1.4
+					}
+				}
+			},
+			"grid": 40,
+			"control": {},
+			"sameAsRoot": true
+		},
+		"Outside_Main": {
+			"name": "Outside_Main",
+			"ID": 2,
+			"is_main": 1,
+			"side": "both",
+			"connect": {
+				"ID": 0,
+				"location": "tip",
+				"dx": 0,
+				"dy": 0,
+				"dz": 0,
+				"yoffset": 1.5
+			},
+			"span": 1.5,
+			"sweep": 0,
+			"dihedral": 10,
+			"mounting_angle": 6,
+			"washout": 0,
+			"root_chord": 0.75,
+			"tip_chord": 0.75,
+			"airfoils": {
+				"af1": {
+					"properties": {
+						"type": "linear",
+						"alpha_L0": -0.036899751,
+						"CL_alpha": 6.283185307,
+						"Cm_L0": -0.0527,
+						"Cm_alpha": -0.08,
+						"CD0": 0.0055,
+						"CD0_L": -0.0045,
+						"CD0_L2": 0.01,
+						"CL_max": 1.4
+					}
+				},
+				"af2": {
+					"properties": {
+						"type": "linear",
+						"alpha_L0": -0.036899751,
+						"CL_alpha": 6.283185307,
+						"Cm_L0": -0.0527,
+						"Cm_alpha": -0.08,
+						"CD0": 0.0055,
+						"CD0_L": -0.0045,
+						"CD0_L2": 0.01,
+						"CL_max": 1.4
+					}
+				}
+			},
+			"grid": 40,
+			"control": {},
+			"sameAsRoot": true
+		},
+		"Horizontal_Tail": {
+			"name": "Horizontal_Tail",
+			"ID": 3,
+			"is_main": 0,
+			"side": "both",
+			"connect": {
+				"ID": 0,
+				"location": "tip",
+				"dx": -5,
+				"dy": 0,
+				"dz": 0,
+				"yoffset": 0
+			},
+			"span": 1,
+			"sweep": 0,
+			"dihedral": 0,
+			"mounting_angle": 0.2661,
+			"washout": 0,
+			"root_chord": 0.75,
+			"tip_chord": 0.75,
+			"airfoils": {
+				"af1": {
+					"properties": {
+						"type": "linear",
+						"alpha_L0": 0,
+						"CL_alpha": 6.283185307,
+						"Cm_L0": 0,
+						"Cm_alpha": 0,
+						"CD0": 0,
+						"CD0_L": 0,
+						"CD0_L2": 0,
+						"CL_max": 1.4
+					}
+				},
+				"af2": {
+					"properties": {
+						"type": "linear",
+						"alpha_L0": 0,
+						"CL_alpha": 6.283185307,
+						"Cm_L0": 0,
+						"Cm_alpha": 0,
+						"CD0": 0,
+						"CD0_L": 0,
+						"CD0_L2": 0,
+						"CL_max": 1.4
+					}
+				}
+			},
+			"grid": 40,
+			"control": {},
+			"sameAsRoot": true
+		},
+		"Vertical_Tail": {
+			"name": "Vertical_Tail",
+			"ID": 4,
+			"is_main": 0,
+			"side": "left",
+			"connect": {
+				"ID": 0,
+				"location": "tip",
+				"dx": -5,
+				"dy": 0,
+				"dz": 0,
+				"yoffset": 0
+			},
+			"span": 1,
+			"sweep": 0,
+			"dihedral": 90,
+			"mounting_angle": 0,
+			"washout": 0,
+			"root_chord": 0.75,
+			"tip_chord": 0.75,
+			"airfoils": {
+				"af1": {
+					"properties": {
+						"type": "linear",
+						"alpha_L0": 0,
+						"CL_alpha": 6.283185307,
+						"Cm_L0": 0,
+						"Cm_alpha": 0,
+						"CD0": 0,
+						"CD0_L": 0,
+						"CD0_L2": 0,
+						"CL_max": 1.4
+					}
+				},
+				"af2": {
+					"properties": {
+						"type": "linear",
+						"alpha_L0": 0,
+						"CL_alpha": 6.283185307,
+						"Cm_L0": 0,
+						"Cm_alpha": 0,
+						"CD0": 0,
+						"CD0_L": 0,
+						"CD0_L2": 0,
+						"CL_max": 1.4
+					}
+				}
+			},
+			"grid": 40,
+			"control": {},
+			"sameAsRoot": true
+		}
+	}
+}
