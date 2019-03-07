@@ -10,10 +10,18 @@ import machup.MU as MU
 import matplotlib.pyplot as plt
 
 
-baseline = MU.MachUp("BaselineDesign.json")
+baseline = MU.MachUp("BaselineGlider.json")
 
-atmos_state = {"V_mag":10,
-              "rho":0.0023769,
-              "alpha": 0,
+atmos_state = {"V_mag":22.7,
+              "rho":0.0020628,
+              "alpha":0,
               "beta":0}
 
+baseline.create_stl("baseline.stl")
+
+FM = baseline.solve(aero_state=atmos_state)
+print(FM)
+
+derivs = baseline.derivatives(aero_state=atmos_state)
+for key in derivs:
+    print(key,derivs[key])

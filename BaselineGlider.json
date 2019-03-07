@@ -19,31 +19,13 @@
 		"CGz": -0.025
 	},
 	"reference": {
-		"area": 0,
-		"longitudinal_length": 0,
-		"lateral_length": 0
+		"area": 6.75,
+		"longitudinal_length": 0.75,
+		"lateral_length": 9
 	},
 	"condition": {
-		"alpha": 1,
+		"alpha": 0,
 		"beta": 0
-	},
-	"controls": {
-		"elevator": {
-			"is_symmetric": 1,
-			"deflection": 0
-		},
-		"rudder": {
-			"is_symmetric": 0,
-			"deflection": 0
-		},
-		"aileron": {
-			"is_symmetric": 0,
-			"deflection": 0
-		},
-		"flap": {
-			"is_symmetric": 1,
-			"deflection": 0
-		}
 	},
 	"airfoil_DB": ".",
 	"wings": {
@@ -112,7 +94,7 @@
 				"dz": 0,
 				"yoffset": 1.5
 			},
-			"span": 1.5,
+			"span": 3,
 			"sweep": 0,
 			"dihedral": 10,
 			"mounting_angle": 6,
